@@ -1,0 +1,111 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-container {
+    position: relative;
+    height: 100vh; /* Altura da viewport */
+    background-image: url('img/trb.png');
+    background-size: cover; /* Cobrir toda a área */
+    background-position: center;
+}
+
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    width: 100px; /* ajuste conforme necessário */
+    height: auto; /* ajuste conforme necessário */
+}
+
+
+/* menu navibar */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent; /* Torna o fundo do header transparente */
+}
+
+
+.navbar {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Isso empurra a lista para a direita */
+}
+
+.nav-item {
+    margin-right: 10px; /* Ajuste conforme necessário */
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000;
+}
+
+
+#user-name {
+    margin-right: 40px; /* Ajuste o valor conforme necessário */
+}
+
+
+
+/* Header */
+header.header {
+    padding: 20px 0;
+}
+img.logo {
+    clear: both;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* Submenu */
+.submenu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    background-color: #ffffff; /* Cor de fundo */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1; /* Coloca o submenu sobre os outros elementos */
+}
+
+.nav-item:hover .submenu {
+    display: block; /* Mostra o submenu quando o item de menu é hover */
+}
+
+.submenu li {
+    margin: 0; /* Remove margens padrão */
+}
+
+.submenu a {
+    padding: 10px; /* Espaçamento interno */
+    display: block; /* Torna o link um bloco */
+    color: #000000; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.submenu a:hover {
+    background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
+}

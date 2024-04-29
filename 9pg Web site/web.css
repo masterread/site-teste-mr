@@ -1,0 +1,130 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body, html {
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* menu navbar */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent; /* Torna o fundo do header transparente */
+}
+
+.navbar {
+    justify-content: flex-end;
+    background: transparent; /* Torna o fundo do header transparente */
+    padding: 0px; /* Adiciona algum preenchimento ao navbar */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 30px; /* Ajuste conforme necessário */
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000;
+}
+
+#user-name {
+    margin-right: 20px; /* Ajuste o valor conforme necessário */
+}
+
+/* Header */
+header.header {
+    padding: 20px 0 20px; /* Adiciona espaço superior */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px; /* Adiciona um espaço entre o logo e o texto */
+}
+
+.company-name {
+    font-size: 20px; /* Ajusta o tamanho do texto conforme necessário */
+}
+
+.company-introduction {
+    margin-top: 80px; /* Adicione a margem superior desejada */
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px; /* Ajuste o valor conforme necessário para compensar a altura do navbar */
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cover-photo img {
+    width: 100%;
+    display: block;
+}
+
+.company-introduction {
+    padding: 50px 0;
+}
+
+.company-introduction p {
+    margin-bottom: 20px;
+}
+
+.team {
+    padding: 50px 0;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
